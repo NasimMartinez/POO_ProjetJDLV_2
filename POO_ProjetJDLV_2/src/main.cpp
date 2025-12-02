@@ -1,7 +1,7 @@
-#include "../lib/modeManager/manager.h"
+#include "../lib/Manager/manager.h"
 
 int main() {
-    ModeManager manager;
+    Manager manager;
     manager.run();
     return 0;
 }
