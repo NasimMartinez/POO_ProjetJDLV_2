@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="POO_ProjetJDLV_2/POO_ProjetJDLV_2.vcxproj" />
+  <Project Path="POO_ProjetJDLV_2/POO_ProjetJDLV_2.vcxproj" Id="fd82745f-5029-4a3e-a7c7-860b3c48ca09" />
 </Solution>
