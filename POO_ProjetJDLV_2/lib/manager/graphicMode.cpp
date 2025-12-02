@@ -22,22 +22,34 @@ static void renderGrid(sf::RenderWindow& window, const Grid& grid) {
 
 void GraphicMode::run(Game& game) {
     const Grid& g = game.getGrid();
-
     sf::RenderWindow window(
         sf::VideoMode(g.getWidth() * cellSize, g.getHeight() * cellSize),
         "Game of Life"
     );
-
+    int timeBetweenIterations = 120;
     while (window.isOpen()) {
+        std::cout << timeBetweenIterations << std::endl;
         sf::Event e;
+
         while (window.pollEvent(e)) {
             if (e.type == sf::Event::Closed)
                 window.close();
-        }
 
+            else if (e.type == sf::Event::KeyPressed) {
+                std::cout << "key pressed !" << std::endl;
+                switch (e.key.code) {
+                case sf::Keyboard::P:
+                    if (timeBetweenIterations > 0) timeBetweenIterations = timeBetweenIterations - 10;
+                    break;
+                case sf::Keyboard::M:
+                    if (timeBetweenIterations < 500) timeBetweenIterations = timeBetweenIterations + 10;
+                    break;
+                }
+            }
+        }
         renderGrid(window, game.getGrid());
         game.nextStep();
 
-        sf::sleep(sf::milliseconds(120));
+        sf::sleep(sf::milliseconds(timeBetweenIterations));
     }
 }
