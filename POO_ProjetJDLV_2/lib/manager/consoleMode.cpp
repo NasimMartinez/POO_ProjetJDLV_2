@@ -1,11 +1,18 @@
 #include "consoleMode.h"
-void ConsoleMode::run(Game& game, const std::string& inputName) {
-	int iteration;
-	std::cout << "Nombre d'iterations ?" << std::endl;
-	std::cin >> iteration;
 
-	std::string outputDir = inputName + "_out";
-	std::filesystem::create_directory(outputDir);
+void ConsoleMode::run(Game& game, const std::string& inputName) {
+    int iteration;
+    std::cout << "Nombre d'iterations ? ";
+    std::cin >> iteration;
+
+    
+    if (iteration <  1) {
+        std::cout << "Erreur : le nombre d'iterations doit etre >= 0 !" << std::endl;
+        return;
+    }
+
+    std::string outputDir = inputName + "_out";
+    std::filesystem::create_directory(outputDir);
 
     for (int i = 0; i < iteration; i++) {
         std::string filename = outputDir + "/iteration_" + std::to_string(i) + ".txt";
@@ -25,5 +32,4 @@ void ConsoleMode::run(Game& game, const std::string& inputName) {
     }
 
     std::cout << "Fin mode console" << std::endl;
-
 }
