@@ -17,7 +17,7 @@ bool TestTools::compare(const Grid& g, const std::vector<std::vector<int>>& expe
 bool TestTools::runTest(const std::vector<std::vector<int>>& start,
     const std::vector<std::vector<int>>& expected,
     int iterations,
-    Rule& rule)
+    Rule& rules)
 {
     int w = start.size();
     int h = start[0].size();
@@ -30,7 +30,7 @@ bool TestTools::runTest(const std::vector<std::vector<int>>& start,
             g.setCell(x, y, start[x][y] == 1 ? (Cell*)new LivingCell : (Cell*)new DeadCell);
 
     // Jeu
-    Game game(&g, &rule);
+    Game game(&g, &rules);
 
     for (int i = 0; i < iterations; i++)
         game.nextStep();

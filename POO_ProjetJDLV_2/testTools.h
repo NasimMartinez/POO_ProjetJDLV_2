@@ -1,6 +1,6 @@
 #pragma once
 #include "grid.h"
-#include "../ruleset/rules.h"
+#include "rules.h"
 #include <vector>
 
 class TestTools {
