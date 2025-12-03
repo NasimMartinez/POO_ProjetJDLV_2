@@ -44,6 +44,8 @@ void GraphicMode::run(Game& game) {
                 case sf::Keyboard::M:
                     if (timeBetweenIterations < 500) timeBetweenIterations = timeBetweenIterations + 10;
                     break;
+                case sf::Keyboard::Escape:
+                    window.close();
                 }
             }
         }
