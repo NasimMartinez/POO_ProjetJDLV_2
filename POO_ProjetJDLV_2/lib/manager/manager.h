@@ -4,11 +4,15 @@
 #include "../fileManager/fileManager.h"
 #include "consoleMode.h"
 #include "graphicMode.h"
+#include "testTools.h"  
 
 class Manager {
 public:
     void run();
+
 private:
     void runConsole(Game& game, const std::string& inputName);
     void runGraphical(Game& game);
+
+    void runTests();   
 };

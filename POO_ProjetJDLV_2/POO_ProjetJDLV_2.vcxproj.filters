@@ -36,6 +36,9 @@
     <ClCompile Include="lib\manager\manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="testTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib\cells\cell.h">
@@ -63,6 +66,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lib\manager\manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testTools.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

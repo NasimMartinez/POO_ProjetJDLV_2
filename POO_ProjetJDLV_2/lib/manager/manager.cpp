@@ -35,12 +35,15 @@ void Manager::run() {
     std::cout << "Quel mode souhaitez vous utiliser ?" << std::endl;
     std::cout << "1. Mode console" << std::endl;
     std::cout << "2. Mode graphique" << std::endl;
+    std::cout << "3  Lancer les tests unitaires" << std::endl;
 
     int mode;
     std::cin >> mode;
     if (mode == 1) runConsole(game, path);
     else if (mode == 2) runGraphical(game);
-    else std::cout << "Pas un mode valide !";
+    else if (mode == 3)runTests();
+    else
+        std::cout << "Pas un mode valide !" << std::endl;
     return;
 }
 
