@@ -1,6 +1,6 @@
 #include "../lib/common/libs.h"
 #include "../lib/Manager/manager.h"
-#include "../lib/testBlocK/testBlock.cpp"
+#include "../lib/testBlocK/testBlock.h"
 
 int main() {
     /*

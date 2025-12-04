@@ -1,4 +1,6 @@
-#include "../grid/grid.cpp"
+#include "testBlock.h"
+
+#include "../grid/grid.h"
 #include "../ruleset/rules.h"
 #include "../cells/cell.h"
 #include "../game/game.h"

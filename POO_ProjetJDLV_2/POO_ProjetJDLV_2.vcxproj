@@ -152,6 +152,7 @@
     <ClInclude Include="lib\manager\graphicMode.h" />
     <ClInclude Include="lib\manager\manager.h" />
     <ClInclude Include="lib\ruleset\rules.h" />
+    <ClInclude Include="lib\testBlock\testBlock.h" />
     <ClInclude Include="lib\testTools\test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
