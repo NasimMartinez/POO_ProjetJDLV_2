@@ -136,8 +136,8 @@
     <ClCompile Include="lib\manager\graphicMode.cpp" />
     <ClCompile Include="lib\manager\manager.cpp" />
     <ClCompile Include="lib\ruleset\rules.cpp" />
+    <ClCompile Include="lib\testBlock\testBlock.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="testTools.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib\cells\cell.h" />
@@ -149,7 +149,7 @@
     <ClInclude Include="lib\manager\graphicMode.h" />
     <ClInclude Include="lib\manager\manager.h" />
     <ClInclude Include="lib\ruleset\rules.h" />
-    <ClInclude Include="testTools.h" />
+    <ClInclude Include="lib\testTools\test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
