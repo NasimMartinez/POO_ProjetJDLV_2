@@ -8,7 +8,7 @@
 #include <iostream>
 
 void testBlockStable() {
-    Grid g(4, 4);
+    Grid* g = new Grid(4, 4);
     g.setCell(1, 1, new LivingCell());
     g.setCell(1, 2, new LivingCell());
     g.setCell(2, 1, new LivingCell());
