@@ -27,8 +27,9 @@ void GraphicMode::run(Game& game) {
         "Game of Life"
     );
     int timeBetweenIterations = 120;
+    bool isPaused = false;
+
     while (window.isOpen()) {
-        std::cout << timeBetweenIterations << std::endl;
         sf::Event e;
 
         while (window.pollEvent(e)) {
@@ -46,11 +47,18 @@ void GraphicMode::run(Game& game) {
                     break;
                 case sf::Keyboard::Escape:
                     window.close();
+                    break;
+                case sf::Keyboard::Space:
+                    isPaused = !isPaused;
                 }
+                
             }
         }
         renderGrid(window, game.getGrid());
-        game.nextStep();
+        if (!isPaused) {
+            std::cout << timeBetweenIterations << std::endl;
+            game.nextStep();
+        }
 
         sf::sleep(sf::milliseconds(timeBetweenIterations));
     }
