@@ -47,8 +47,8 @@ int Grid::countAliveNeighbors(int x, int y) const {
 			// Se saute soi même
 			if (X == 0 && Y == 0) continue;
 
-			int XCell = X + x;
-			int YCell = Y + y;
+			int XCell = (X + x+ width) % width;
+			int YCell = (Y + y+ height) % height;
 
 			// Saute les cellules hors de la grille
 			if (XCell < 0 || XCell >= width || YCell < 0 || YCell >= height) continue;
