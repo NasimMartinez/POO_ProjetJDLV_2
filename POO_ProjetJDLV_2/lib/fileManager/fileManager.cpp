@@ -85,6 +85,11 @@ bool FileManager::isHeaderInts(std::ifstream& file) {
 	if (!(issHeader >> nbLines >> nbColumns)) {
 		return false;
 	}
+
+	std::string leftover;
+	if (issHeader >> leftover) {
+		return false;
+	}
 	return true;
 }
 
