@@ -1,6 +1,7 @@
-# THIS IS A BACKUP
-I accidentally killed the previous repository (oops)
+# Projet jeu de la vie
+Ce projet consiste a programmer le jeu de la vie en C++. <br/> 
+Le but du projet est de nous mettre a l'aise avec les concepts de la programmation orienté objet.
 
-Link for previous repo in case it doesn't get fixed in time :<br/>
+#### Ceci est un backup
+Link du repositoire non fini precedent :
 https://github.com/benga2004/Projet_POO_JDLV <br/>
-When checking for commits and pushes, check out the old repo where most of the work got made (unless more are made here)
